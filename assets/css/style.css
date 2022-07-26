@@ -1,0 +1,811 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&family=Work+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--secondary-font);
+  color: var(--color);
+  scroll-behavior: smooth;
+}
+/* ----------NAvigation Bar---------- */
+.nav {
+  background-color: rgb(15, 14, 14);
+  top: 0;
+  height: 4.5rem;
+  padding-top: 5px;
+  padding-right: 3px;
+  color: white;
+  width: 100%;
+  position: fixed;
+  opacity: 100px;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8rem;
+  padding-right: 5rem;
+}
+.nav-logo {
+  font-size: 1.5rem;
+  cursor: pointer;
+
+}
+.nav-list {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  max-width: 6rem;
+  height: 2rem;
+}
+.nav-list a:hover {
+  color: #f7517a;
+  text-decoration: none;
+  opacity: 1;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+/* ----------These are variables ---------- */
+:root {
+  --bg: #252a34;
+  --bg-dark: rgb(15, 14, 14);;
+  --color: #eaeaea;
+  --light-color: #eaeaeaa4;
+  --primary-color: #08d9d6;
+  --secondary-color: #ff2e63;
+  --font: 'Crimson Text', serif;
+  --secondary-font: 'Work Sans', sans-serif;
+}
+body {
+  background: var(--bg);
+  color: var(--color);
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- Home Page ---------- */
+#main {
+  width: 100%;
+  top: 3.7rem;
+  /* height: 50em; */
+  padding: 5em 0;
+  backdrop-filter: blur(0.7px);
+  backdrop-filter: contrast(250px);
+  position: relative;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+}
+#main::before {
+  content: "";
+  width: 100%;
+  height: 30em;
+  position: absolute;
+  right: 25em;
+  z-index: -1;
+  background-color: rgb(15, 14, 14);
+}
+#main .user_info {
+  margin: 0 30px;
+}
+#main .user_info .user_name {
+  font-family: var(--font);
+  font-size: 5em;
+}
+#main p {
+  font-family: var(--secondary-font);
+  font-size: 1.5em;
+  color: var(--light-color);
+  margin-bottom: 1.5em;
+}
+#main .user_img img {
+  width: 30em;
+  height: 30em;
+  border-radius: 50%;
+  margin: 0 30px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.479);
+}
+#main .user_info .btn {
+  padding: 0.6em 2em;
+  background: none;
+  color: var(--color);
+  font-size: 1.1em;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid var(--secondary-color);
+  transition: all 0.4s;
+}
+#main .user_info .btn:hover {
+  background: var(--secondary-color);
+}
+#particles-js {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+/*About Section*/
+.about {
+  height: 100vh;
+  background-color: rgb(15, 14, 14);
+}
+.ab-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+.ab-img {
+  height: 27rem;
+  width: 23rem;
+  margin-left: 5rem;
+}
+.ab-p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: large;
+}
+.ab-para {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 10rem;
+  min-width: 20rem;
+}
+.ab-h {
+  font-size: xx-large;
+  font-weight: bolder;
+  min-width: 4rem;
+}
+
+/* ---------- Skills section ---------- */
+.skills {
+  width: 100%;
+  /* height: 50em; */
+  margin: 2em 0;
+  position: relative;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-color:rgb(15, 14, 14);;
+}
+
+.skills::before,
+.skills::after {
+  content: "";
+  position: absolute;
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+}
+.skills::before {
+  left: -10em;
+  bottom: 0;
+}
+.skills::after {
+  right: -10em;
+  top: 8em;
+}
+.skill_box {
+  flex-wrap: wrap;
+}
+
+.skill_box .box {
+  margin: 2em 2em;
+  width: 15em;
+  height: 12em;
+  background-color: rgb(15, 14, 14);
+  background: rgba(255, 255, 255, 0.089);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.068);
+  border-bottom: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+.skill_box .box .fa-github{
+  border-style: none;
+}
+.skill_box .box .fa-github:hover{
+  color: white;
+}
+.skill_box .box::before {
+  content: "";
+  position: absolute;
+  background: var(--secondary-color);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform-origin: bottom;
+  transform: scaleY(0.03);
+  transition: all 0.3s;
+}
+.skill_box .box:hover::before {
+  transform: scaleY(1);
+}
+.skill_box .box i {
+  margin-bottom: 0.1em;
+}
+.skill_head {
+  font-size: 5em;
+  font-family: var(--font);
+}
+
+/* ---------- Projects ---------- */
+#projects, #contact,.bg{
+  background-color: rgb(15, 14, 14);
+}
+.sp-pro {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: xx-large;
+}
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+.p1 {
+  height: 27rem;
+  width: 20rem;
+}
+.pro1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.p2 {
+  height: 27rem;
+  width: 20rem;
+}
+.pro2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.p3 {
+  height: 27rem;
+  width: 20rem;
+}
+.pro3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pro4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.p4 {
+  height: 15rem;
+  width: 28rem;
+}
+.horizontal-pro{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  margin-left: 12rem;
+  margin-right: 12rem;
+}
+.pro5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  padding: 0.6em 2em;
+  background: none;
+  color: var(--color);
+  font-size: 1.1em;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid var(--secondary-color);
+}
+.btn:hover {
+  background: var(--secondary-color);
+}
+
+/* This is now css for contact*/
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 12rem;
+  margin-right: 6rem;
+  flex-direction: row;
+}
+.con-text {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-right: 1rem;
+  color: #000;
+}
+
+.form{
+  display: flex;
+  position: absolute;
+  margin-left: 40%;
+  justify-content: center;
+  align-items: center;
+  min-height: 110vh;
+}
+
+.form .contact-form input{
+  width: 30rem;
+  background-color: transparent;
+  border: 0px;
+  border: transparent;
+  margin: 20px;
+  padding: 10px;
+  font-size: 18px;
+  border-bottom: 2px solid #fff;
+}
+.form .contact-form input ~ span{
+  position: absolute;
+  left: 20px;
+  transition: 0.5s ease-in-out;
+  margin-top: 10px;
+}
+.form .contact-form input:focus ~span{
+  transform: translateY(-20px);
+  pointer-events: none;
+}
+.form .contact-form textarea{
+  width: 30rem;
+  border: 0px;
+  background-color: transparent;
+  margin: 20px;
+  font-size: 17px;
+  border-bottom: 2px solid white;
+}
+.form .contact-form textarea ~ span
+{
+  position: absolute;
+  left: 20px;
+  margin-top: 10px;
+  transition: 0.5s ease-in-out;
+}
+.form .contact-form textarea:focus ~span{
+  transform: translateY(-20px);
+  pointer-events: none;
+}
+.form .contact-form input[type=submit]{
+  padding: 0.6em 2em;
+  background: none;
+  color: var(--color);
+  font-size: 1.1em;
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid var(--secondary-color);
+}
+.form .contact-form input[type=submit]:hover{
+  background-color: var(--secondary-color);
+  
+}
+
+.message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.h1 {
+  font-size: 4rem;
+}
+.button {
+  text-align: center;
+  background-color: rgb(15, 14, 14);
+  color:white;
+  border: 2px solid var(--secondary-color);
+}
+.button:hover {
+  background-color: var(--secondary-color);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+}
+.adr {
+  display: flex;
+  flex-direction: row;
+}
+/* ---------- Social Media Icons ---------- */
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100%;
+  margin-top: 3rem;
+}
+.fa-facebook {
+  color: white;
+  border: 1px solid white;
+}
+
+.fa-github {
+  color: white;
+  border: 1px solid white;
+}
+
+.fa-linkedin {
+  color: white;
+  border: 1px solid white;
+}
+
+.fa-instagram {
+  color: white;
+  border: 1px solid white;
+}
+.fa-whatsapp {
+  color: white;
+  border: 1px solid white;
+}
+.fa-whatsapp:hover {
+  color: #27e650c4;
+  border: 1px solid #27e650c4;
+}
+.fa-facebook:hover {
+  color: #3b5998;
+  border: 1px solid #3b5998;
+}
+.fa-twitter:hover {
+  color: #55acee;
+  border: 1px solid #55acee;
+}
+.fa-github:hover {
+  color: rgb(179, 179, 94);
+  border: 1px solid rgb(179, 179, 94);
+}
+
+.fa-instagram:hover {
+  color: rgb(184, 45, 91);
+  border: 1px solid rgb(184, 45, 91);
+}
+.fa-linkedin:hover {
+  color: rgb(40, 103, 178);
+  border: 1px solid rgb(40, 103, 178);
+}
+
+/* This is CSS for footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(20, 20, 20);
+  color: antiquewhite;
+  width: 84.2rem;
+  height: 2.4rem;
+  padding-top: 0.5rem;
+}
+.content {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/* ---------- Media Queries ---------- */
+@media (max-width: 1120px) {
+  #main .user_img img {
+    width: 25em;
+    height: 25em;
+  }
+  .skills {
+    height: 100%;
+    padding: 5em 0;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about div{
+    width: 70%;
+  }
+  .projects{
+    flex-direction: column;
+  }
+}
+@media (max-width: 900px) {
+  .skills {
+    height: 100%;
+    padding: 5em 0;
+  }
+  .skill_box .box {
+    margin: 2em .6em;
+    width: 12em;
+    height: 8em;
+  }
+  .skill_head {
+    font-size: 5em;
+    font-family: var(--font);
+  }
+  .ab-img {
+    font-size: 5em;
+    margin-left: 4rem;
+    font-family: var(--font);
+  }
+  .projects .project_heading {
+    margin-bottom: 0.4em;
+    font-size: 5em;
+    font-family: var(--font);
+  }
+
+  .ab-text{
+    display: block;
+    font-size: 25px;    
+
+  }
+  .ab-p, .about{
+    font-size: 25px;
+  }
+  .ab-img{
+    margin-left: 50px;
+  }
+  .ab-para{
+    /*margin-top: 2vh;*/
+    padding-right: 2px;
+    margin-left: 65px;
+    margin-top: 20px;
+
+  }
+}
+@media (max-width: 700px) {
+  body {
+    font-size: 13px;
+  }
+  .skill_box .box{
+    margin: 2em 0.5em;
+    width: 12em;
+    height: 8em;
+  }
+  .ab-text{
+    display: block;
+  }
+  .ab-img{
+    margin-left: 50px;
+  }
+  .ab-para{
+    /*margin-top: 2vh;*/
+    padding-right: 2px;
+    margin-left: 65px;
+    margin-top: 20px;
+
+  }
+  .project{
+    display: block;
+  }
+  .horizontal-pro{
+    display: block;
+    
+  }
+  .user_info ,.user_name{
+    font-size: small;
+  }
+ 
+  .contact{
+    display: block;
+    margin-left: 190px;
+
+  }
+  .ab-text{
+    font-size: 15px;
+  }
+  .pro1, .pro2{
+    margin-bottom: 60px;
+  }
+  .p4{
+     /*content: url("../java-img.jpg");*/
+    margin-left: -20px;
+    width: 350px;;
+    height: 450px;
+  }
+  .pro4{
+    display: none;
+  }
+  
+  .address, .email{
+    margin-bottom:40px;
+
+  }
+  .project{
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  
+  .text{
+    font-size: medium;
+    margin-left: 75px;
+    padding-bottom: 45px;
+  }
+  .form{
+    display: none;
+  }
+  .footer{
+    display: block;
+    margin-left: 220px;
+    padding-bottom: 50px;
+
+  }
+  footer{
+    background-color: rgb(15, 14, 14);
+
+  }
+  .nav{
+    visibility: hidden;
+  }
+  .nav-logo{
+    visibility: visible;
+  }
+  body,.footer{
+    background-color: rgb(15, 14, 14);
+    
+  }
+
+
+}
+
+@media (max-width: 450px) {
+  #main .user_img img{
+    width: 20em;
+    height: 20em;
+  }
+  .projects .container .main_box .icon{
+    height: 100%;
+    padding: 0.2em;
+  }
+  .projects .container .main_box {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 2em 0.2em;
+  }
+  body{
+    background-color: rgb(15, 14, 14);
+    
+  }
+  .social{
+    font-size: large;
+  }
+  .ab-text{
+    display: block;
+    padding-bottom: 100px;
+  }
+  .ab-img{
+    margin-left: -8.5vh;
+    height: 50vh;
+    width: 42vh;
+    
+  }
+  .about{
+    padding-bottom: 120vh;
+  }
+  .hor-line{
+    display: none;
+  }
+  .message{
+    display: block;
+  }
+  .form .right{
+    display: none;
+    visibility: none;
+  }
+  .ab-para{
+    margin-top: 0.5vh;
+    margin-left: -8.5vh;
+    
+  }
+  .ab-p{
+    font-size: 17px;
+  }
+  .project{
+    display: block;
+  }
+  .horizontal-pro{
+    display: block;
+    
+  }
+ 
+  .contact{
+    display: block;
+    margin-left: 30px;
+
+  }
+  
+  .pro1, .pro2{
+    margin-bottom: 60px;
+  }
+  
+  /* ----------Changing picuture for mobile view only---------- */
+  .p4{
+    /*content: url("Img/java-img.jpg");*/
+    margin-left: -30px;
+    width: 322px;;
+    height: 450px;
+  }
+  .pro4{
+    display: none;
+  }
+
+  /* ----------Changing text for mobile view only---------- */
+  .pr-5{
+    visibility: hidden;
+    position: relative;
+  }
+  .pr-5:after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Java UMS";
+  }
+  
+  .project{
+    padding-bottom: 20px;
+  }
+  .hr-pro{
+    margin-right: 5px;
+    margin-left: 105px;
+    
+  }
+  .text{
+    font-size: medium;
+    margin-left: -115px;
+    padding-bottom: 45px;
+  }
+  .form{
+    display: none;
+  }
+  .footer{
+    display: block;
+    margin-left: 70px;
+    padding-bottom: 50px;
+
+  }
+  footer{
+    background-color: rgb(15, 14, 14);
+
+  }
+  
+}
+
+@media (max-width: 350px) {
+  body{
+    font-size: 8px;
+  }
+}
+
