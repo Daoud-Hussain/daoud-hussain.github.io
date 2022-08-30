@@ -1,7 +1,27 @@
 
+<!-- # Portfolio
+![daoud](https://user-images.githubusercontent.com/87219816/154142239-e606e357-64e8-492c-a73f-9ef2239f514b.png) -->
 # Portfolio
-![daoud](https://user-images.githubusercontent.com/87219816/154142239-e606e357-64e8-492c-a73f-9ef2239f514b.png)
+## Screenshots
 
+### Home
+<img src="Img/home.PNG">
+
+### About
+<img src="Img/about.PNG">
+
+### Skills
+
+<img src="Img/skills.PNG">
+
+### Projects
+
+<img src="Img/projects1.PNG">
+<img src="Img/projects2.PNG">
+
+### Contact
+
+<img src="Img/contact.PNG">
 
 ##
 
