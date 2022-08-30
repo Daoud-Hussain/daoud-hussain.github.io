@@ -95,9 +95,9 @@ particlesJS('particles-js', {
 
 //Typing animation Script
 var typed = new Typed(".typing", {
-	strings: ["Web developer", "Wordpress Designer", "Programmer", "CS Technophile"],
-	typeSpeed: 75,
-	backSpeed: 50,
+	strings: ["Web developer", "Wordpress Developer", "Open-Source Contributer ", "Programmer"],
+	typeSpeed: 65,
+	backSpeed: 40,
 	loop: true
 })
 

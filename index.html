@@ -12,6 +12,7 @@
     font-awesome.min.css">
    
 </head>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="shortcut icon" href="Img/favicon.png" alt=""type="image/png">
     <link
       rel="stylesheet"
@@ -21,20 +22,30 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Daoud Hussain</title>
+
+    <style>       
+      hr{
+          height: 0.65px;
+          background-color: rgba(255, 255, 255,0.5);
+          border: none;
+      }
+  </style>
 </head>
 <body id="home">
-  <section class="nav">
-    <div class="nav-bar">
-      <a href="#main"><img src="Img/Logo.png"  alt=""  class="nav-logo"></a>
-      <div class="nav-list">
-        <li class="nav-items"><a href="#home">Home</a></li>
-        <li class="nav-items"><a href="#about">About</a></li>
-        <li class="nav-items"><a href="#Skills">Skills</a></li>
-        <li class="nav-items"><a href="#projects">Projects</a></li>
-        <li class="nav-items"><a href="#contact">Contact</a></li>
-      </div>
-    </div>
-  </section>
+  <!---header--->
+	<header>
+		<a href="#" class="logo"><img src="img/logo.png"></a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<ul class="navbar">
+			<li><a href="#main">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#Skills">Skills</a></li>
+			<li><a href="#portfolio ">Projects</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</header>
+
   <section id="main" class="center">
       <div id="particles-js"></div>
       <div class="user_info">
@@ -44,25 +55,27 @@
         <div class="social">
           <a href="https://www.instagram.com/daoud_huxxain/" target="_blank" class="fa fa-instagram"></a>
           <a href="https://github.com/Daoud-Hussain" target="_blank" class="fa fa-github"></a>
-          <a href="https://www.linkedin.com/in/daoud-hussain-302/" target="_blank" class="fa fa-linkedin"></a>
+          <a href="https://www.linkedin.com/in/daoud-hussain/" target="_blank" class="fa fa-linkedin"></a>
           <a href="https://wa.me/923483016704" target="_blank" class="fa fa-whatsapp"></a>
         </div> 
       </div>
       <div class="user_img">
         <img src="Img/new-home-img.jpg" alt="" />
       </div>
-  </section> <br> <br>
+  </section> <br> <br> 
   <main class="about" id="about"> 
-    <br><br><br> <br><br> <br>
+    <br><br><hr> <br><br><br> <br> <br>
     <section class="ab-text" >
       <img class="ab-img" src="Img/IMG_0309.jpg" alt="">
       <div class="ab-para" >
         <h1 class="h1" style="font-size: x-large;">About:</h1> <hr> <br> <br> 
       <p class="ab-p">
-        A computer scientist to be and a young technophile aspiring to become a professional in the field of Blockchain. As a web developer, I am passionate about creating a unique, clean and elegant designs. The design you love, The design that work! </p> <br><br>
+        A computer scientist to be and a young technophile aspiring to become a professional in the field of Blockchain. As a web developer,
+         I am passionate about creating a unique, clean and elegant designs. The design you love, The design that work! </p> <br> <br>
 
       <p class="ab-p" style="opacity:2; color:rgba(160, 154, 154, 0.877);"> You Name It; We Make It!</p> <br> <hr class="hor-line">
-      </div>
+      </div> 
+    </section>
   </main> <hr >
   <section class="skills center" id="Skills"> <br> <br>
     <p class="skill_head"  style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Skills</p>
@@ -92,7 +105,7 @@
         <p  style="font-size: larger;">JAVA</p>
       </div>
       <div class="box" class="mobile">
-        <i class="fa fa-code" style="font-size:60px; padding-right: 70px;"></i>
+        <i class="fa fa-line-chart" style="font-size:60px; padding-right: 70px;"></i>
         <p class="box-content" style="padding-bottom: 60px; font-size: larger;">Data Structures</p>
       </div>
       <div class="box">
@@ -100,45 +113,162 @@
         <p style="font-size: larger;">Git / Github</p>
       </div>
     </div>
-  </section> <hr>
-  <main id="projects"> <br> <br> <br> <br>
-    <section class="sp-pro">
-      <h1>Projects</h1> <br>
-      </section><br><br>
-    <div class="project">
-      <div class="pro1">
-        <p style="text-align: center; color:var(--light-color); font-size: larger;">Wordpress Portfolio</p> <br>
-        <img class="p1" src="Img/project1.jpg" > <br>
-        <a href="http://www.daoudhussain.unaux.com/" target="_blank"><button class="btn">Explore Now </button></a>
+  </section> 
+  
+ 
+  <!---portfolio--->
+  
+	<section class="portfolio" id="portfolio"><hr><br><br><br> 
+		<section class="project">
+      <p class="skill_head"  class="hr-pro" style="font-size: 3.5rem;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Projects</p>
+    </section>
+		<div class="portfolio-content">
+      <a href="https://github.com/Daoud-Hussain/90-Days-of-Data-Structures/tree/master/Semester%20Project" target="_blank">
+        <div class="row"> 
+          <img src="img/project2.jpg">
+          <div class="main-row">
+            <div class="row-text">
+              <h6>Made with C++ Data Structures</h6>
+            </div>
+            <div class="row-icon">
+              <i class='bx bx-heart'></i>
+            </div>
+          </div> 
+          <h3>FoodPanda Management System</h3>
+        </div>
+      </a>
+        
+			<a href="https://github.com/Daoud-Hussain/University-Management-System" target="_blank">
+        <div class="row">
+          <img src="img/ums.jpg">
+          <div class="main-row">
+            <div class="row-text">
+              <h6>Made with Java Console </h6>
+					</div>
+					<div class="row-icon">
+            <i class='bx bx-heart'></i>
+					</div>
+				</div>
+				<h3>University Management System</h3>
+			</div>
+    </a>
 
-      </div>
-      <div class="pro2">
-        <p style="text-align: center; color:var(--light-color); font-size: larger;">Hotel Website</p> <br>
-        <img class="p2" src="Img/Hotel-web.PNG" > <br>
-        <a href="https://daoud-hussain.github.io/Hotel-Website/" target="_blank"><button class="btn">Explore Now </button></a>
-      </div>
-      <div class="pro3">
-        <p style="text-align: center; color:var(--light-color); font-size: larger;">Simple Calculator</p> <br>
-        <img class="p3" src="Img/calculator.PNG" > <br>
-        <a href="https://daoud-hussain.github.io/Simple-Calculator/" target="_blank"><button class="btn">Explore Now </button></a>
-      </div>
-    </div> <br><br><br><b></b>
-    <div class="horizontal-pro">
-      <div class="pro4">
-        <p style="text-align: center; color:var(--light-color); font-size: larger;">PSL-Info Python</p> <br>
-        <img class="p4" src="Img/psl.jpg" > <br>
-        <a href="https://github.com/Daoud-Hussain/PSL-Semester-project" target="_blank"><button class="btn">Explore Now </button></a>
-      </div>
-      <div class="pro5">
-      <p class = "pr-5" style="text-align: center; color:var(--light-color); font-size: larger;">University Management System</p> <br>
-      <img class="p4" src="Img/ums.jpg" > <br>
-      <a href="https://github.com/Daoud-Hussain/University-Management-System" target="_blank"><button class="btn">Explore Now </button></a>
-      </div> <br>
+      <a href="https://github.com/Daoud-Hussain/PSL-Info-project" target="_blank">
+        <div class="row">
+          <img src="img/project7.jpg">
+          <div class="main-row">
+            <div class="row-text">
+              <h6>Made with Python, Tkinter and MySQL</h6>
+            </div>
+            <div class="row-icon">
+              <i class='bx bx-heart'></i>
+            </div>
+          </div>
+          <h3>Pakistan Super League Information</h3>
+        </div>
+      </a>
+
+      <a class="temp" href="https://daoud-hussain.github.io/Lamp-Glower/" target="_blank">
+        <div class="row" >
+          <img src="img/project4.PNG">
+          <div class="main-row">
+            <div class="row-text">
+              <h6>Made with HTML, CSS and Javascript</h6>
+            </div>
+            <div class="row-icon">
+              <i class='bx bx-heart'></i>
+            </div>
+          </div>
+          <h3>Lamp Glower</h3>
+        </div>
+      </a>
+      
+      <a href="https://github.com/Daoud-Hussain/Housing-Society-Management-System" target="_blank">
+        <div class="row">
+          <img src="img/project1.jpg">
+          <div class="main-row">
+            <div class="row-text">
+              <h6>Made with Java OOP and Swing </h6>
+            </div>
+            <div class="row-icon">
+              <i class='bx bx-heart'></i>
+            </div>
+          </div>
+          <h3>Housing Society Management System</h3>
+        </div>
+      </a>
+
+      <a href="https://daoud-hussain.github.io/Hotel-Website/" target="_blank">
+        <div class="row">
+          <img src="img/project9.PNG">
+          <div class="main-row">
+            <div class="row-text">
+              <h6>Made with HTML, CSS and Javascript</h6>
+            </div>
+            <div class="row-icon">
+              <i class='bx bx-heart'></i>
+            </div>
+          </div>
+          <h3>Hotel Website </h3>
+        </div>
+      </a>
+
+      <a href="https://daoud-hussain.github.io/Simple-Calculator/" target="_blank">
+        <div class="row">
+          <img src="img/project5.PNG">
+          <div class="main-row">
+            <div class="row-text">
+              <h6>Made with HTML, CSS and Javascript</h6>
+            </div>
+            <div class="row-icon">
+              <i class='bx bx-heart'></i>
+            </div>
+          </div>
+          <h3>Simple Calculator </h3>
+        </div>
+      </a>
+
+      <a href="http://www.daoudhussain.unaux.com/"  target="_blank">
+        <div class="row">
+          <img src="img/project6.PNG">
+          <div class="main-row">
+            <div class="row-text">
+              <h6>Made using Wordpress and theme astra  </h6>
+            </div>
+            <div class="row-icon">
+              <i class='bx bx-heart'></i>
+            </div>
+          </div>
+          <h3>Wordpress Portfolio  </h3>
+        </div>
+      </a>
+
+      <a class="temp"  target="_blank" href="https://daoud-hussain.github.io/Find-my-Github/">
+        <div class="row">
+          <img src="img/project15.PNG">
+          <div class="main-row">
+            <div class="row-text">
+              <h6>Made with HTML, CSS and Javascript</h6>
+            </div>
+            <div class="row-icon">
+              <i class='bx bx-heart'></i>
+            </div>
+          </div>
+          <h3>Find My Github  </h3>
+        </div>
+      </a>
+
+		</div>
+    <div class="project-btn">
+      <a target="_blank" href="https://github.com/Daoud-Hussain">
+        <button class="btn" > See More</button>
+      </a>
     </div>
-  </main>
-  <main id="contact"> <br> <br> <br> <hr><br> <br>
+	</section> <br> <br>
+
+  <main id="contact"> <hr><br> <br>
     <section class="project">
-      <p class="skill_head"  class="hr-pro" style="font-size: 3.5rem;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Contact Us</p>
+      <p  style="font-size: 3.5rem;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Contact Us</p>
     </section>
 
 <div class="bg"> <br>
@@ -164,18 +294,18 @@
               <h2>E-mail</h2>
               <p>daoudhussain302@gmail.com</p>
           </section>
-      </div> <br> <br>
-  </div> <br>
+      </div> 
+    </div>
     
-    <form class="form">
+    <form class="form" action="https://formspree.io/f/myyorvpz" method="POST">
           <div class="right">
             <div class="contact-form">
-                <input type="text" required>
+                <input name="Name" type="text" required>
                 <span>Full Name</span>
             </div>
 
             <div class="contact-form">
-                <input type="E-mail" required>
+                <input name="Email" type="E-mail" required>
                 <span>E-mail</span>
             </div>
             <div class="contact-form">
@@ -186,24 +316,36 @@
             </div>
 
             <div class="contact-form">
-                <input type="submit" name="submit">
+                <input type="submit"  onClick="window.location.reload(true)" name="submit">
             </div>
             </div>
           </div>
         </div>
   </form>
-</div> 
+</div>
 </main> 
-  <footer>
-    <br><br><br>
-        <footer class="footer">
-          <p class="content">Copyright © 2022 | All rights reserved</p>
-          <p class="content">Powered by Daoud Hussain</p>
-        </footer>
-  </footer>
+ <!---scroll-top--->
+ <a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+
+  <!---Dark-light theme--->
+  <!-- <a class="theme-button"><i class='bx bx-up-arrow-alt' ></i></a> -->
+
+ <div  class="end-icons" >
+   <a href="https://www.facebook.com/nadan.daoud" target="_blank" class="fa fa-facebook"></a>
+   <a href="https://www.instagram.com/daoud_huxxain/" target="_blank" class="fa fa-instagram"></a>
+   <a href="https://github.com/Daoud-Hussain" target="_blank" class="fa fa-github"></a>
+   <a href="https://www.linkedin.com/in/daoud-hussain/" target="_blank" class="fa fa-linkedin"></a>
+   <a href="https://wa.me/923483016704" target="_blank" class="fa fa-whatsapp"></a>
+  </div> 
+  
+  <div class="last-text">
+    <p>Copyright © 2022 | All rights Reserved by <span style="color: #ff2e63;"> Daoud Hussain</span>  </p>
+  </div>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
   <script src="assets/js/particles.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
 
 </body>
 </html>
