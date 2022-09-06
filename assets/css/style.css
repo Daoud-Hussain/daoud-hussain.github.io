@@ -163,7 +163,7 @@ body {
 }
 .ab-img:hover{
     cursor: pointer;
-    box-shadow: var(--secondary-color) 0px 3px 10px;
+    box-shadow: rgba(122, 119, 119, 0.888) 0px 3px 10px;
 }
 .ab-p {
   font-size: large;
@@ -690,9 +690,7 @@ a:link{
     margin-top: 20px;
 
   }
-}
-@media (max-width: 830px){
-	#menu-icon{
+  #menu-icon{
 		display: block;
 	}
 	.navbar{
@@ -714,9 +712,69 @@ a:link{
 	.navbar.active{
 		top: 100%;
 	}
-	
 }
 
+@media (max-width: 770px) {
+  .ab-text{
+    display: block;
+    /* padding-bottom: 100px; */
+    font-size: 20px;
+  }
+  .ab-text .ab-p{
+    padding-right: 4px;
+    margin-right: 10px;
+  }
+  .ab-img{
+    /* margin-left: -9.5vh; */
+    height: 54vh;
+    width: 42vh;
+  }
+  .hor-line{
+    display: none;
+  }
+  .about{
+    padding-bottom: 123vh;
+  }
+  .message{
+    display: block;
+  }
+  .ab-para{
+    margin-top: 0.5vh;
+    /* margin-left: -8.5vh; */
+    
+  }
+  .form{
+      margin-left: -50px;
+      /* background-color: red; */
+      min-height: 10px;
+      padding-top: 50px;
+  }
+  #contact{
+    font-size: large;
+  }
+  .end-icons{
+    margin-top: 45%;
+    max-width:97%;
+    border-radius: 100%;
+  }
+  .last-text{
+    letter-spacing: 0px;
+    font-size: large;
+  }
+  .form .contact-form input{
+    width: 33rem;
+  }
+  .form .contact-form textarea{
+    width: 33rem;
+  }
+  .btn3{
+    width: 33rem;
+  }
+  .project-btn{
+    padding-left: 40vw;
+  }
+
+}
 @media (max-width: 700px) {
   body {
     font-size: 13px;
@@ -853,7 +911,6 @@ a:link{
   }
   .project-btn{
     padding-left: 28vw;
-    
   }
   .end-icons{
     bottom: 0;
@@ -872,7 +929,8 @@ a:link{
   }
   .message .form{
     display: block;
-    left: -145px;
+    /* left: -10px; */
+    right: 1px;
   }
   
   .form{
@@ -889,7 +947,7 @@ a:link{
     width: 20rem;
   }
   .end-icons{
-    margin-top: 80%;
+    margin-top: 90%;
     max-width:97%;
     border-radius: 100%;
   }
