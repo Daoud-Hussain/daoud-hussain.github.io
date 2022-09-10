@@ -108,8 +108,16 @@ body {
 }
 #main .user_info .user_name {
   font-family: var(--font);
-  font-size: 5em;
+  font-size: 4.5em;
 }
+#main .user_info .user_intro{
+  display: flex;
+}
+#main .user_info .user_image{
+  width: 70px;
+  height: 70px;
+}
+
 #main p {
   font-family: var(--secondary-font);
   font-size: 1.5em;
@@ -123,6 +131,8 @@ body {
   margin: 0 30px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.479);
 }
+
+
 #main .user_info .btn {
   padding: 0.6em 2em;
   background: none;
@@ -322,7 +332,7 @@ a:link{
 .row:hover{
 	transform: scale(1.05) translateY(-5px);
 	cursor: pointer;
-  box-shadow: var(--secondary-color) 0px 3px 10px;
+  box-shadow: rgba(122, 119, 119, 0.888) 0px 3px 10px;
 }
 
 
@@ -826,7 +836,6 @@ a:link{
   }
 
 
-
 }
 
 @media (max-width: 450px) {
@@ -834,6 +843,9 @@ a:link{
   #main .user_img img{
     width: 20em;
     height: 20em;
+  }
+  #main .user_info .user_image{
+    display: none;
   }
   .projects .container .main_box .icon{
     height: 100%;
