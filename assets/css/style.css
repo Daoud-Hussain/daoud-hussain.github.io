@@ -24,7 +24,7 @@ header{
 	border-bottom: 1px solid transparent;
 	transition: all .40s ease;
 }
-.logo Img{
+.logo img{
 	width: 135px;
 	height: auto;
 }
@@ -124,7 +124,7 @@ body {
   color: var(--light-color);
   margin-bottom: 1.5em;
 }
-#main .user_Img Img {
+#main .user_img img {
   width: 30em;
   height: 30em;
   border-radius: 50%;
@@ -165,13 +165,13 @@ body {
   margin-right: 6rem;
   font-family: var(--secondary-font);
 }
-.ab-Img {
+.ab-img {
   height: 27rem;
   width: 23rem;
   margin-left: 5rem;
   border-radius: 2px;
 }
-.ab-Img:hover{
+.ab-img:hover{
     cursor: pointer;
     box-shadow: rgba(122, 119, 119, 0.888) 0px 3px 10px;
 }
@@ -290,7 +290,7 @@ body {
 	gap: 2rem;
 	margin-top: 5rem;
 }
-.row Img{
+.row img{
 	height: auto;
 	width: 100%;
 	border-radius: 0.5rem;
@@ -639,7 +639,7 @@ a:link{
 
 /* ---------- Media Queries ---------- */
 @media (max-width: 1120px) {
-  #main .user_Img Img {
+  #main .user_img img {
     width: 25em;
     height: 25em;
   }
@@ -671,7 +671,7 @@ a:link{
     font-size: 5em;
     font-family: var(--font);
   }
-  .ab-Img {
+  .ab-img {
     font-size: 5em;
     margin-left: 4rem;
     font-family: var(--font);
@@ -690,7 +690,7 @@ a:link{
   .ab-p, .about{
     font-size: 25px;
   }
-  .ab-Img{
+  .ab-img{
     margin-left: 50px;
   }
   .ab-para{
@@ -734,7 +734,7 @@ a:link{
     padding-right: 4px;
     margin-right: 10px;
   }
-  .ab-Img{
+  .ab-img{
     /* margin-left: -9.5vh; */
     height: 54vh;
     width: 42vh;
@@ -797,7 +797,7 @@ a:link{
   .ab-text{
     display: block;
   }
-  .ab-Img{
+  .ab-img{
     margin-left: 50px;
   }
   .ab-para{
@@ -840,7 +840,7 @@ a:link{
 
 @media (max-width: 450px) {
   
-  #main .user_Img Img{
+  #main .user_img img{
     width: 20em;
     height: 20em;
   }
@@ -877,7 +877,7 @@ a:link{
   .hor-line{
     display: none;
   }
-  .ab-Img{
+  .ab-img{
     margin-left: -9.5vh;
     height: 54vh;
     width: 42vh;
