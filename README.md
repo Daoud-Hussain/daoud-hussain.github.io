@@ -16,8 +16,7 @@
 
 ### Projects
 
-<img src="Img/projects1.PNG">
-<img src="Img/projects2.PNG">
+<img src="Img/Projects.PNG">
 
 ### Contact
 
