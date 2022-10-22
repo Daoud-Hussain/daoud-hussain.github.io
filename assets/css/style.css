@@ -995,6 +995,10 @@ a:link{
 	.navbar.active{
 		top: 100%;
 	}
+  .row{
+      border: 2px solid rgba(255, 255, 255, 0.137);
+
+  }
 }
 
 @media (max-width: 350px) {
