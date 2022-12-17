@@ -69,6 +69,11 @@ header.sticky{
   --font: 'Crimson Text', serif;
   --secondary-font: 'Work Sans', sans-serif;
   --bg-color: #020312b5;
+  --home-page-delay: 1s;
+  --about-page-delay: calc(var(--home-page-delay) + 1s);
+  --skills-page-delay: calc(var(--about-page-delay) + 1s);
+  --project-page-delay: calc(var(--skills-page-delay) + 1s);
+  --contact-page-delay: calc(var(--project-page-delay) + 1s);
   
 }
 body {
@@ -80,6 +85,57 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+/* Page Animations */
+#about{
+  animation: article-load 300ms ease-in var(--about-page-delay);
+  animation-fill-mode: forwards;
+  transform: translateY(-20px);
+  animation-duration: 1s;
+  opacity: 0;
+}
+#Skills{
+  animation: article-load 300ms ease-in var(--skills-page-delay);
+  animation-fill-mode: forwards;
+  transform: translateY(-20px);
+  animation-duration: 1s;
+  opacity: 0;
+}
+#portfolio{
+  animation: article-load 300ms ease-in var(--project-page-delay);
+  animation-fill-mode: forwards;
+  transform: translateY(-20px);
+  animation-duration: 1s;
+  opacity: 0;
+}
+#contact{
+  animation: article-load 300ms ease-in var(--contact-page-delay);
+  animation-fill-mode: forwards;
+  transform: translateY(-20px);
+  animation-duration: 1s;
+  opacity: 0;
+}
+
+h1, body {
+  animation: article-load 300ms ease-in var(--home-page-delay);
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+@keyframes article-load{
+  0%{
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
 
 
 /* ---------- Home Page ---------- */
