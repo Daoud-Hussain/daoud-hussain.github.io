@@ -356,7 +356,7 @@ a:link{
   text-decoration: none;
 }
 .row{
-  border: 2px solid rgba(255, 255, 255, 0.068);
+  border: 2px solid rgba(66, 64, 64, 0.877);
 	padding: 25px;
 	background: rgba(20, 21, 27, 0.63);
 	border-radius: 0.5rem;
@@ -376,7 +376,7 @@ a:link{
 	font-weight: 700;
 }
 .row h6{
-	color: var(--secondary-color);
+	color: rgba(160, 154, 154, 0.877);
 	font-size: 16px;
 	font-weight: 500;
 	letter-spacing: 1px;
