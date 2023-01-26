@@ -225,12 +225,9 @@ h1, body {
   height: 27rem;
   width: 23rem;
   margin-left: 5rem;
-  border-radius: 2px;
+  border-radius: 4px;
 }
-.ab-img:hover{
-    cursor: pointer;
-    box-shadow: rgba(122, 119, 119, 0.888) 0px 3px 10px;
-}
+
 .ab-p {
   font-size: large;
 }
