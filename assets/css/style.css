@@ -690,10 +690,45 @@ a:link{
 }
 
 /* ---------- Media Queries ---------- */
+@media (max-width: 2000px) {
+  #main .user_img img {
+    width: 40em;
+    height:40em;
+  }
+  .navbar{
+    font-size: large;
+  }
+
+  .ab-text{
+   font-size: larger;
+    
+  }
+  .ab-para{
+    margin-top: 150px;
+  }
+  .ab-img{
+    height: 500px;
+    margin-top: 150px;
+  }
+
+  .skill_box .box{
+    height: 15em;
+    width: 16em;
+    font-size: large;
+  }
+
+  .center, .about, .skills{
+    height: 100vh;
+  }
+}
 @media (max-width: 1120px) {
   #main .user_img img {
     width: 25em;
     height: 25em;
+  }
+  .center{
+    /* height: 100vh; */
+    /* background: red; */
   }
   .skills {
     height: 100%;
