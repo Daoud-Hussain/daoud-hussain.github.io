@@ -925,30 +925,26 @@ a:link{
     padding-bottom: 100px;
 
   }
-  .ab-text .ab-p{
-    padding-right: 4px;
-    margin-right: 10px;
-    font-size: larger;
-  }
   .hor-line{
     display: none;
   }
+  .special-br{
+    display: none;
+  }
   .ab-img{
+    padding-top: -3rem;
     margin-left: -9.5vh;
-    height: 54vh;
-    width: 42vh;
     
   }
   .about{
-    padding-bottom: 130vh;
+    height: 165vh;
   }
   .message{
     display: block;
   }
   .ab-para{
     margin-top: 0.5vh;
-    margin-left: -8.5vh;
-    
+    margin-left: -9vh;    
   }
   .ab-p{
     font-size: 17px;
