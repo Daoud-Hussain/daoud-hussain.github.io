@@ -32,3 +32,12 @@ const sr = ScrollReveal ({
 sr.reveal('.user_info',{delay:190, origin:'bottom'})
 
 sr.reveal('.about,.skills,.portfolio,.contact',{delay:200, origin:'bottom'})
+
+// Hiding URL link from icons on hover 
+function urlclicked(){
+	document.getElementById('insta').href = "https://www.instagram.com/daoud_huxxain/";
+	document.getElementById('github').href = "https://github.com/Daoud-Hussain";
+	document.getElementById('linkedin').href = "https://www.linkedin.com/in/daoud-hussain/";
+	document.getElementById('whatsapp').href = "https://wa.me/923483016704";
+	document.getElementById('facebook').href= "https://www.facebook.com/nadan.daoud";
+}
