@@ -30,7 +30,6 @@ const sr = ScrollReveal ({
 })
 
 sr.reveal('.user_info',{delay:190, origin:'bottom'})
-
 sr.reveal('.about,.skills,.portfolio,.contact',{delay:200, origin:'bottom'})
 
 // Hiding URL link from icons on hover 

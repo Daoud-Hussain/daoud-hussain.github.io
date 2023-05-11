@@ -387,9 +387,7 @@ a:link{
   box-shadow: rgba(122, 119, 119, 0.888) 0px 3px 10px;
 }
 
-
 /* ---------- Buttons ---------- */
-
 .btn {
   position: relative;
   display: inline-block;
@@ -462,7 +460,6 @@ a:link{
 }
 
 /* This is now css for contact*/
-
 .contact {
   display: flex;
   justify-content: space-between;
@@ -484,8 +481,8 @@ a:link{
   justify-content: center;
   align-items: center;
   min-height: 70vh;
+  padding-top: 2rem;
 }
-
 .form .contact-form input{
   width: 30rem;
   background-color: transparent;
@@ -551,6 +548,10 @@ a:link{
 .adr {
   display: flex;
   flex-direction: row;
+}
+
+.mobile-br{
+  display: none;
 }
 /* ---------- Social Media Icons ---------- */
 .fa {
@@ -625,7 +626,6 @@ a:link{
   color: rgb(40, 103, 178);
   border: 1px solid rgb(40, 103, 178);
 }
-
 .top{
 	position: fixed;
 	bottom: 2.1rem;
@@ -952,8 +952,17 @@ a:link{
   .contact{
     display: block;
     margin-left: 30px;
-
+    
   }
+  /* .contact-form{
+    padding-top: 0;
+    background-color: #3b5998;
+  } */
+  
+  .mobile-br{
+    display: block;
+  }
+
   .portfolio-content{
     margin-left: -27px;
   }
@@ -981,7 +990,7 @@ a:link{
   .text{
     font-size: medium;
     margin-left: -115px;
-    padding-bottom: 45px;
+    /* padding-bottom: 45px; */
   }
   .skill_box .box .fa-line-chart{
     padding-bottom: 4px;
@@ -991,6 +1000,8 @@ a:link{
     display: block;
     /* left: -10px; */
     right: 1px;
+    margin-top: -5rem;
+    /* background: #08d9d6; */
   }
   
   .form{
