@@ -321,7 +321,20 @@ h1, body {
   font-size: 5em;
   font-family: var(--font);
 }
+.icon {
+  font-size: 60px; 
+  color: #fff; 
+}
+.fa-ethereum{
+  padding-bottom: 10px;
+}
+.ganache-icon {
+  width: 70px; /* Customize the width if needed */
+  height: 70px; /* Customize the height if needed */
+  filter: grayscale(100%);
+  padding-bottom: 10px;
 
+}
 /* ---------- Projects ---------- */
 #projects, #portfolio, #contact,.bg{
   background-color: rgb(15, 14, 14);
@@ -954,11 +967,15 @@ a:link{
     margin-left: 30px;
     
   }
-  /* .contact-form{
-    padding-top: 0;
-    background-color: #3b5998;
-  } */
-  
+
+  .ganache-icon {
+    width: 55px;
+    height: 55px;
+  }
+  .icon{
+    font-size: 45px;
+    padding-bottom: 5px;
+  }
   .mobile-br{
     display: block;
   }
