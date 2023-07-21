@@ -52,11 +52,6 @@ header{
 	display: none;
 }
 
-header.sticky{
-	padding: 5px 16%;
-  background: var(--bg-dark);
-	border-bottom: 1px solid rgba(255, 255, 255,0.5);
-}
 
 /* ----------These are variables ---------- */
 :root {
@@ -658,31 +653,6 @@ a:link{
   border: 1px solid var(--secondary-color);
 }
 
-/* .theme-button{
-	position: fixed;
-	bottom: 2.1rem;
-	left: 2.1rem;
-}
-.theme-button i{
-	background: var(--secondary-color);
-	color: #ffff;
-	font-size: 20px;
-	padding: 10px;
-	border-radius: 0.5rem;
-}
-.theme-button i:hover{
-  box-shadow: var(--secondary-color) 0px 3px 6px;
-  color: var(--secondary-color);
-	background: rgba(255, 255, 255, 0.09);
-  border: 1px solid var(--secondary-color);
-  cursor: pointer;
-} */
-
-
-.light-mode{
-  color: var(--bg);
-  background-color: white;
-}
 
 /* This is CSS for footer */
 .last-text p{
