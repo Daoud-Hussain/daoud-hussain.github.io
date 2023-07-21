@@ -992,9 +992,6 @@ a:link{
     border-radius: 0.5rem;
     transition: all .40s ease;
   }
-  .temp{
-    display: none;
-  }
   .project-btn{
     padding-left: 28vw;
   }
