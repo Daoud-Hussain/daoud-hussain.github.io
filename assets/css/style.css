@@ -316,17 +316,9 @@ h1, body {
   font-size: 5em;
   font-family: var(--font);
 }
-.icon {
-  font-size: 60px; 
-  color: #fff; 
-}
-.fa-ethereum{
-  padding-bottom: 10px;
-}
-.node-icon, .mongo-icon , .react-icon{
-  width: 70px; /* Customize the width if needed */
-  height: 70px; /* Customize the height if needed */
-  filter: grayscale(100%);
+.node-icon, .mongo-icon , .react-icon, .data-icon{
+  width: 70px; 
+  height: 70px;
   padding-bottom: 10px;
 
 }
@@ -938,14 +930,11 @@ a:link{
     
   }
 
-  .ganache-icon {
+  .react-icon, .node-icon, .mongo-icon, .data-icon {
     width: 55px;
     height: 55px;
   }
-  .icon{
-    font-size: 45px;
-    padding-bottom: 5px;
-  }
+  
   .mobile-br{
     display: block;
   }
