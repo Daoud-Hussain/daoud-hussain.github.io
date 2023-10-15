@@ -231,6 +231,7 @@ h1, body {
   flex-direction: column;
   margin-left: 10rem;
   min-width: 20rem;
+  text-align: justify;
 }
 .ab-h {
   font-size: xx-large;
@@ -908,14 +909,16 @@ a:link{
     
   }
   .about{
-    height: 165vh;
+    height: 180vh;
+    margin-bottom: 1rem;
   }
   .message{
     display: block;
   }
   .ab-para{
+    font-size: 17px;
     margin-top: 0.5vh;
-    margin-left: -9vh;    
+    margin-left: -10vh;  
   }
   .ab-p{
     font-size: 17px;
