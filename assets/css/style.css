@@ -323,7 +323,7 @@ h1, body {
 .fa-ethereum{
   padding-bottom: 10px;
 }
-.ganache-icon {
+.node-icon, .mongo-icon , .react-icon{
   width: 70px; /* Customize the width if needed */
   height: 70px; /* Customize the height if needed */
   filter: grayscale(100%);
