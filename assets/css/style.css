@@ -32,6 +32,9 @@ header{
 .navbar{
 	display: flex;
 }
+.active {
+  background-color: var(--secondary-color); /* Replace with the desired background color */
+}
 .navbar a{
 	color: var(--color);
 	font-size: larger;
@@ -137,7 +140,7 @@ h1, body {
 /* ---------- Home Page ---------- */
 #main {
   width: 100%;
-  padding: 3em 0;
+  padding: 2em 0;
   backdrop-filter: blur(0.7px);
   backdrop-filter: contrast(250px);
   position: relative;
@@ -627,9 +630,9 @@ a:link{
   border: 1px solid rgb(40, 103, 178);
 }
 .top{
-	position: fixed;
-	bottom: 2.1rem;
-	right: 2.1rem;
+	position: sticky;
+  bottom: 2.1rem;
+	left: 93.75%;
 }
 .top i{
 	background: var(--secondary-color);
@@ -654,7 +657,7 @@ a:link{
 	font-size: 15px;
 	font-weight: 200;
 	letter-spacing: 1px;
-
+  margin-bottom: 0;
 }
 .end-icons{
   /* background-color: rgb(20, 20, 20); */
@@ -1032,6 +1035,11 @@ a:link{
   .row{
       border: 2px solid rgba(255, 255, 255, 0.137);
 
+  }
+  .top{
+    position: sticky;
+    bottom: 2.1rem;
+    left: 83%;
   }
 }
 

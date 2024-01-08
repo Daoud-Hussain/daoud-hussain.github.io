@@ -69,27 +69,27 @@ particlesJS('particles-js', {
 		}
 	},
 	interactivity: {
-		detect_on: 'window',
-		events: {
-			onhover: {
-				enable: false,
-				mode: 'repulse'
-			},
-			onclick: {
-				enable: false,
-				mode: 'push'
-			}
-		},
-		modes: {
-			'repulse' : {
-				distance: 70,
-				duration: 0.4
-			},
-			'push' : {
-				particles_nb: 4
-			}
-		}
-	},
+  detect_on: 'window',
+  events: {
+    onhover: {
+      enable: false,  // Disable onhover event
+      mode: 'repulse'
+    },
+    onclick: {
+      enable: false,
+      mode: 'push'
+    }
+  },
+  modes: {
+    'repulse' : {
+      distance: 70,
+      duration: 0.4
+    },
+    'push' : {
+      particles_nb: 4
+    }
+  }
+},
 	retina_detect: true
 });
 
@@ -102,3 +102,27 @@ var typed = new Typed(".typing", {
 })
 
 const allElements = document.querySelectorAll('.animated-text');
+
+document.addEventListener('DOMContentLoaded', function () {
+	const sections = document.querySelectorAll('.scroll-section');
+	const navItems = document.querySelectorAll('.navbar a');
+  
+	function changeNavBackground() {
+	  const scrollPosition = window.scrollY;
+  
+	  sections.forEach((section, index) => {
+		const sectionTop = section.offsetTop;
+		const sectionHeight = section.clientHeight;
+  
+		if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+		  navItems[index].style.backgroundColor = '#ff2e63';
+		} else {
+		  navItems[index].style.backgroundColor = 'initial';
+		}
+	  });
+	}
+
+	navItems[0].style.backgroundColor = '#ff2e63';
+  
+	window.addEventListener('scroll', changeNavBackground);
+  });
