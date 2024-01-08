@@ -11,7 +11,7 @@
 }
 /* ----------NAvigation Bar---------- */
 header{
-	position: fixed;
+	position: sticky;
 	right: 0;
 	top: 0;
 	width: 100%;
@@ -20,13 +20,14 @@ header{
 	align-items: center;
 	justify-content: space-between;
 	background: transparent;
-	padding: 22px 16%;
+	padding: 8px 6%;
 	border-bottom: 1px solid transparent;
 	transition: all .40s ease;
 }
 .logo img{
 	width: 135px;
 	height: auto;
+
 }
 .navbar{
 	display: flex;
@@ -36,7 +37,7 @@ header{
 	font-size: larger;
 	font-weight: 600;
 	padding: 10px 18px;
-	margin: 0 2px;
+	margin: 0;
 	border-radius: 0.5rem;
 	transition: all .40s ease;
 }
@@ -136,9 +137,7 @@ h1, body {
 /* ---------- Home Page ---------- */
 #main {
   width: 100%;
-  top: 3.7rem;
-  /* height: 50em; */
-  padding: 5em 0;
+  padding: 3em 0;
   backdrop-filter: blur(0.7px);
   backdrop-filter: contrast(250px);
   position: relative;
@@ -317,7 +316,7 @@ h1, body {
   font-size: 5em;
   font-family: var(--font);
 }
-.node-icon, .mongo-icon , .react-icon, .data-icon{
+.node-icon, .mongo-icon , .react-icon, .data-icon , .native-icon , .tailwind-icon{
   width: 70px; 
   height: 70px;
   padding-bottom: 10px;
@@ -933,7 +932,7 @@ a:link{
     
   }
 
-  .react-icon, .node-icon, .mongo-icon, .data-icon {
+  .react-icon, .node-icon, .mongo-icon, .data-icon, .native-icon , .tailwind-icon {
     width: 55px;
     height: 55px;
   }

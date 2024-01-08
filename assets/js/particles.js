@@ -95,11 +95,10 @@ particlesJS('particles-js', {
 
 //Typing animation Script
 var typed = new Typed(".typing", {
-	strings: ["Full-Stack Developer", "MERN Fellow", "Open-Source Contributer ", "Software Engineer"],
+	strings: ["Full-Stack Developer", "MERN Fellow", "Open-Source Contributer ", "React-native developer"],
 	typeSpeed: 65,
 	backSpeed: 40,
 	loop: true
 })
 
 const allElements = document.querySelectorAll('.animated-text');
-
