@@ -128,43 +128,18 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
-  // DOM Element's
+ // DOM Element's
 const counters = document.querySelectorAll('.counter');
 
-/*** Using forEach() ***/
-
-/*
-
-counters.forEach((counter) => {
-    const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-        const divider = 5000;
-        const speed = 1000;
-
-        const inc = target / divider;
-
-        if (count < target) {
-            counter.innerText = Math.ceil(count + inc);
-            setTimeout(updateCount, speed);
-        } else {
-            counter.innerText = target;
-        }
-    };
-
-    updateCount();
-});
-
-*/
-
-/*** Same functionality, now using for...of ***/
-
+// Loop to update counter 
 for (let n of counters) {
     const updateCount = () => {
         const target = +n.getAttribute('data-target');
         const count = +n.innerText;
-        const divider = 5000;
-        const speed = 20; // 1000 millisecond => 1 second;
+
+        // Adjusted values for speed and divider
+        const divider = 100; // Adjust this value for a smoother animation
+        const speed = 2500 / divider; // 2000 milliseconds => 2 seconds
 
         const inc = target / divider;
 
