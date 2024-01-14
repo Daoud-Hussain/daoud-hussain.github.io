@@ -473,7 +473,7 @@ a:link {
 }
 
 .row:hover {
-  transform: scale(1.05) translateY(-5px);
+  transform: scale(1.05) translateX(3) translateY(-5px);
   cursor: pointer;
   box-shadow: rgba(122, 119, 119, 0.888) 0px 3px 10px;
 }
@@ -667,6 +667,7 @@ a:link {
   text-decoration: none;
   border-radius: 100%;
   margin-top: 3rem;
+  color: var(--secondary-color);
 }
 
 .fa-facebook {
