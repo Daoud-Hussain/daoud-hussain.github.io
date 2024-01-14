@@ -40,3 +40,4 @@ function urlclicked(){
 	document.getElementById('whatsapp').href = "https://wa.me/923483016704";
 	document.getElementById('facebook').href= "https://www.facebook.com/nadan.daoud";
 }
+

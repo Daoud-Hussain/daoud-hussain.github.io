@@ -56,6 +56,44 @@ header{
 	display: none;
 }
 
+/* Counting Animation */
+
+.counters {
+  margin-top: 20px;
+  margin-left: -15px;
+  /* padding: 20px 0px; */
+}
+
+.counting-icons{
+  color: red;
+}
+.counters .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  text-align: center;
+}
+
+.counters i {
+  margin-bottom: 5px;
+}
+
+.counters .counter {
+  font-size: 45px;
+  /* margin: 10px 0; */
+}
+
+@media (max-width: 700px) {
+  .counters .container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .counters .container > div:nth-of-type(1),
+  .counters .container > div:nth-of-type(2) {
+      border-bottom: 1px solid lightskyblue;
+      padding-bottom: 20px;
+  }
+}
 
 /* ----------These are variables ---------- */
 :root {
