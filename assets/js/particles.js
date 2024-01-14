@@ -72,7 +72,7 @@ particlesJS('particles-js', {
   detect_on: 'window',
   events: {
     onhover: {
-      enable: false,  // Disable onhover event
+      enable: false,  
       mode: 'repulse'
     },
     onclick: {
@@ -137,9 +137,8 @@ for (let n of counters) {
         const target = +n.getAttribute('data-target');
         const count = +n.innerText;
 
-        // Adjusted values for speed and divider
-        const divider = 100; // Adjust this value for a smoother animation
-        const speed = 2500 / divider; // 2000 milliseconds => 2 seconds
+        const divider = 100; 
+        const speed = 2500 / divider; 
 
         const inc = target / divider;
 
