@@ -10,6 +10,29 @@
   scroll-behavior: smooth;
   list-style: none;
 }
+:root {
+  --bg: #252a34;
+  --bg-dark: rgb(15, 14, 14);
+  ;
+  --color: #eaeaea;
+  --light-color: #eaeaeaa4;
+  --primary-color: #08d9d6;
+  --secondary-color: #ff2e63;
+  --font: 'Crimson Text', serif;
+  --secondary-font: 'Work Sans', sans-serif;
+  --bg-color: #020312b5;
+  --home-page-delay: 1s;
+  --about-page-delay: calc(var(--home-page-delay) + 1s);
+  --skills-page-delay: calc(var(--about-page-delay) + 1s);
+  --project-page-delay: calc(var(--skills-page-delay) + 1s);
+  --contact-page-delay: calc(var(--project-page-delay) + 1s);
+
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--color);
+}
 
 /* ----------Navigation Bar---------- */
 header {
@@ -93,33 +116,6 @@ header {
 
 .counters .counter {
   font-size: 45px;
-}
-
-@media (max-width: 700px) {}
-
-/* ----------These are variables ---------- */
-:root {
-  --bg: #252a34;
-  --bg-dark: rgb(15, 14, 14);
-  ;
-  --color: #eaeaea;
-  --light-color: #eaeaeaa4;
-  --primary-color: #08d9d6;
-  --secondary-color: #ff2e63;
-  --font: 'Crimson Text', serif;
-  --secondary-font: 'Work Sans', sans-serif;
-  --bg-color: #020312b5;
-  --home-page-delay: 1s;
-  --about-page-delay: calc(var(--home-page-delay) + 1s);
-  --skills-page-delay: calc(var(--about-page-delay) + 1s);
-  --project-page-delay: calc(var(--skills-page-delay) + 1s);
-  --contact-page-delay: calc(var(--project-page-delay) + 1s);
-
-}
-
-body {
-  background: var(--bg-dark);
-  color: var(--color);
 }
 
 .center {
@@ -552,7 +548,7 @@ a:link {
 
 }
 
-/* This is now css for contact*/
+/* Contact section */
 .contact {
   display: flex;
   justify-content: space-between;
@@ -759,7 +755,6 @@ a:link {
 }
 
 
-/* This is CSS for footer */
 .last-text p {
   text-align: center;
   padding: 20px;
