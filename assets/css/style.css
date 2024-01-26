@@ -10,6 +10,7 @@
   scroll-behavior: smooth;
   list-style: none;
 }
+
 :root {
   --bg: #252a34;
   --bg-dark: rgb(15, 14, 14);
@@ -34,6 +35,9 @@ body {
   color: var(--color);
 }
 
+::selection{
+  color: var(--secondary-color);
+}
 /* ----------Navigation Bar---------- */
 header {
   position: sticky;
@@ -259,54 +263,45 @@ body {
 
 /*About Section*/
 .about {
-  height: 100vh;
-  background-color: rgb(15, 14, 14);
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
 }
 
-.ab-text {
+.display {
+  width: 40%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  color: white;
-  margin-left: 6rem;
-  margin-right: 6rem;
-  font-family: var(--secondary-font);
+  justify-content: center;
 }
 
 .ab-img {
-  height: 27rem;
-  width: 23rem;
-  margin-left: 5rem;
+  max-width: 60%;
 }
 
-.ab-p {
-  font-size: large;
-}
-
-.ab-para {
+.intro {
+  width: 60%;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  margin-left: 10rem;
-  min-width: 20rem;
-  text-align: justify;
+  /* align-items: center; */
+  justify-content: center;
 }
 
-.ab-h {
-  font-size: xx-large;
-  font-weight: bolder;
-  min-width: 4rem;
+.intro .ab-p {
+  max-width: 90%;
+  padding: 2% 0;
+  text-align: justify
 }
+
 
 /* ---------- Skills section ---------- */
 .skills {
   width: 100%;
-  margin: 2em 0;
+  margin: 3px 0 2em 0;
   position: relative;
   flex-direction: column;
   overflow-x: hidden;
   background-color: rgb(15, 14, 14);
-  ;
 }
 
 .skills::before,
@@ -380,9 +375,10 @@ body {
   margin-bottom: 0.1em;
 }
 
-.skill_head {
+.skill_head, .page_head {
   font-size: 5em;
   font-family: var(--font);
+  text-align: center;
 }
 
 .node-icon,
@@ -405,12 +401,6 @@ body {
   background-color: rgb(15, 14, 14);
 }
 
-.project {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
 .portfolio-content {
   padding-bottom: 45px;
   padding-left: 45px;
@@ -419,7 +409,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   align-items: center;
   gap: 2rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .row img {
@@ -784,12 +774,28 @@ a:link {
     padding: 5em 0;
   }
 
+
   .about {
     flex-direction: column;
+    height: fit-content;
   }
-
-  .about div {
-    width: 70%;
+  .mobile-hr{
+    display: none;
+  }
+  .display, .intro{
+    width: 100%;
+  }
+  .intro h1{
+    padding-left: 5%;
+    align-self: flex-start;
+  }
+  .display .ab-img{
+    max-width: 40%;
+  }
+  .intro{
+    padding: 5% 0;
+    align-items: center;
+    justify-content: center;
   }
 
   .projects {
@@ -809,45 +815,12 @@ a:link {
     height: 8em;
   }
 
-  .skill_head {
-    font-size: 5em;
-    font-family: var(--font);
-  }
-
-  .ab-img {
-    font-size: 5em;
-    margin-left: 4rem;
-    font-family: var(--font);
-  }
-
   .projects .project_heading {
     margin-bottom: 0.4em;
     font-size: 5em;
     font-family: var(--font);
   }
 
-  .ab-text {
-    display: block;
-    font-size: 25px;
-
-  }
-
-  .ab-p,
-  .about {
-    font-size: 25px;
-  }
-
-  .ab-img {
-    margin-left: 50px;
-  }
-
-  .ab-para {
-    /*margin-top: 2vh;*/
-    padding-right: 2px;
-    margin-left: 65px;
-    margin-top: 20px;
-
-  }
 
   #menu-icon {
     display: block;
@@ -877,36 +850,13 @@ a:link {
 }
 
 @media (max-width: 770px) {
-  .ab-text {
-    display: block;
-    font-size: 20px;
-  }
-
-  .ab-text .ab-p {
-    padding-right: 4px;
-    margin-right: 10px;
-  }
-
-  .ab-img {
-    height: 54vh;
-    width: 42vh;
-  }
 
   .hor-line {
     display: none;
   }
 
-  .about {
-    padding-bottom: 123vh;
-  }
-
   .message {
     display: block;
-  }
-
-  .ab-para {
-    margin-top: 0.5vh;
-
   }
 
   .form {
@@ -923,6 +873,9 @@ a:link {
     margin-top: 45%;
     max-width: 97%;
     border-radius: 100%;
+  }
+  .display .ab-img{
+    max-width: 80%;
   }
 
   .last-text {
@@ -959,21 +912,6 @@ a:link {
     height: 8em;
   }
 
-  .ab-text {
-    display: block;
-  }
-
-  .ab-img {
-    margin-left: 50px;
-  }
-
-  .ab-para {
-    padding-right: 2px;
-    margin-left: 65px;
-    margin-top: 20px;
-
-  }
-
   .user_info,
   .user_name {
     font-size: small;
@@ -984,16 +922,6 @@ a:link {
     margin-left: 190px;
 
   }
-
-  .ab-text {
-    font-size: 15px;
-  }
-
-  .project {
-    padding-bottom: 20px;
-    text-align: center;
-  }
-
   .text {
     font-size: medium;
     margin-left: 75px;
@@ -1046,12 +974,6 @@ a:link {
     font-size: large;
   }
 
-  .ab-text {
-    display: block;
-    padding-bottom: 100px;
-
-  }
-
   .hor-line {
     display: none;
   }
@@ -1060,29 +982,16 @@ a:link {
     display: none;
   }
 
-  .ab-img {
-    padding-top: -3rem;
-    margin-left: -9.5vh;
-
+  .intro{
+    padding: 10% 0;
   }
-
-  .about {
-    height: 180vh;
-    margin-bottom: 1rem;
+  .display .ab-img {
+    padding-top: 5%;
+    max-width: 80%;
   }
 
   .message {
     display: block;
-  }
-
-  .ab-para {
-    font-size: 17px;
-    margin-top: 0.5vh;
-    margin-left: -10vh;
-  }
-
-  .ab-p {
-    font-size: 17px;
   }
 
   .project {
@@ -1107,10 +1016,6 @@ a:link {
 
   .mobile-br {
     display: block;
-  }
-
-  .portfolio-content {
-    margin-left: -27px;
   }
 
   .row {
@@ -1220,7 +1125,8 @@ a:link {
     bottom: 2.1rem;
     left: 83%;
   }
-  .main-br{
+
+  .main-br {
     display: none;
   }
 }
