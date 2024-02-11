@@ -1,107 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #000;
-    }
-    
-    .container {
-      max-width: 800px;
-      text-align: center;
-      padding: 20px;
-      background: tomato;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="shortcut icon" href="Img/Fav-icon.png" alt="" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="assets/js/script.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
 
-    .heading {
-      font-size: 36px;
-      margin-bottom: 20px;
-    }
+      .container {
+        max-width: 800px;
+        text-align: center;
+        padding: 20px;
+      }
 
-    .paragraph {
-      font-size: 18px;
-      margin-bottom: 30px;
-    }
+      .heading {
+        margin-bottom: 20px;
+      }
 
-    .card-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-    }
+      .paragraph {
+        font-size: 18px;
+        margin-bottom: 30px;
+        padding: 0 5%;
+        text-align: center;
+      }
 
-    .card {
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      margin: 10px;
-      width: 45%;
-    }
+      .card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
 
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .social-icons a {
-      text-decoration: none;
-      color: #333;
-      margin: 0 10px;
-    }
-
-    .portfolio-button {
-      display: block;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      padding: 10px 20px;
-      font-size: 16px;
-      text-decoration: none;
-      margin-top: 20px;
-    }
-
-    @media only screen and (max-width: 600px) {
       .card {
-        width: 100%;
-        margin: 4% 0;
-        padding: 20px 0;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 10px;
+        width: 45%;
+        border: 1px solid #fff;
       }
-      .card-container{
-        flex-direction: column;
+
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
       }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1 class="heading">Thank You!</h1>
-    <p class="paragraph">We appreciate your support.</p>
-    <div class="card-container">
-      <div class="card">
-        <h2>Connect with Us</h2>
-        <div class="social-icons">
-          <a href="#"><img src="social-icon-1.png" alt="Social Icon 1"></a>
-          <a href="#"><img src="social-icon-2.png" alt="Social Icon 2"></a>
-          <a href="#"><img src="social-icon-3.png" alt="Social Icon 3"></a>
+
+      .social-icons a {
+        text-decoration: none;
+        color: #fff;
+        margin: 0 10px;
+      }
+
+      .portfolio-button {
+        display: block;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 17px 20px;
+        font-size: 1.1em;
+        text-decoration: none;
+        margin-top: 20px;
+        position: relative;
+        border-radius: 0.25rem;
+        background-color: var(--bg-dark);
+        cursor: pointer;
+        z-index: 1;
+        transition: 0.5s;
+        border: 2px solid #fff;
+        border-radius: 5px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .card {
+          width: 100%;
+          margin: 4% 0;
+          padding: 20px 0;
+        }
+        .card-container {
+          flex-direction: column;
+        }
+        .portfolio-button {
+          width: 90%;
+          margin: 4% auto 0 auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading page_head">Thank You!</h1>
+      <p class="paragraph">
+        I appreciate your support. I'll contact you back shortly, but in the
+        meantime, take a look at my amazing work.
+      </p>
+      <div class="card-container">
+        <div class="card">
+          <h2>Connect with Me</h2>
+          <div class="social social-icons">
+            <a
+              id="insta"
+              target="_blank"
+              class="fa fa-instagram"
+              onclick="urlclicked()"
+            ></a>
+            <a
+              id="github"
+              target="_blank"
+              class="fa fa-github"
+              onclick="urlclicked()"
+            ></a>
+            <a
+              id="linkedin"
+              target="_blank"
+              class="fa fa-linkedin"
+              onclick="urlclicked()"
+            ></a>
+            <a
+              id="whatsapp"
+              target="_blank"
+              class="fa fa-whatsapp"
+              onclick="urlclicked()"
+            ></a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Visit My Portfolio</h2>
+          <a href="index.html" class="portfolio-button btn-effect">
+            <div class="top-face">Visit Portfolio</div>
+            <div class="front-face">Visit Portfolio</div>
+          </a>
         </div>
       </div>
-      <div class="card">
-        <h2>Visit Our Portfolio</h2>
-        <a href="#" class="portfolio-button">Visit Now</a>
-      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
+
+<script>
+  // JavaScript to handle visit portfolio button click event
+  document
+    .getElementById("visitNowButton")
+    .addEventListener("click", function (event) {
+      // Prevent the default action (following the link)
+      event.preventDefault();
+      // Redirect to index.html
+      window.location.href = this.getAttribute("href");
+    });
+</script>
