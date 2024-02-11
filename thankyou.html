@@ -9,109 +9,93 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-      background-color: #f4f4f4;
+      background-color: #f8f9fa;
     }
-
+    
     .container {
       max-width: 800px;
       margin: 50px auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       text-align: center;
+      padding: 20px;
     }
 
-    h1 {
+    .heading {
       font-size: 36px;
-      color: #333;
+      margin-bottom: 20px;
     }
 
-    p {
+    .paragraph {
       font-size: 18px;
-      color: #666;
       margin-bottom: 30px;
     }
 
+    .card-container {
+      display: flex;
+      flex-direction: row;
+      /* flex-wrap: wrap; */
+      justify-content: center;
+    }
+
     .card {
-      display: inline-block;
-      width: 250px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       padding: 20px;
-      margin: 20px;
-      border-radius: 8px;
-      background-color: #f9f9f9;
-    }
-
-    .card:nth-child(2) {
-      background-color: #e9f9ff;
-    }
-
-    .card h2 {
-      font-size: 24px;
-      color: #333;
-    }
-
-    .card p {
-      font-size: 16px;
-      color: #666;
+      margin: 10px;
+      width: 45%;
     }
 
     .social-icons {
+      display: flex;
+      justify-content: center;
       margin-top: 20px;
     }
 
     .social-icons a {
-      display: inline-block;
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
-      text-align: center;
-      border-radius: 50%;
-      background-color: #333;
-      color: #fff;
-      font-size: 20px;
+      text-decoration: none;
+      color: #333;
       margin: 0 10px;
-      transition: background-color 0.3s ease;
-    }
-
-    .social-icons a:hover {
-      background-color: #666;
     }
 
     .portfolio-button {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #3498db;
+      display: block;
+      background-color: #007bff;
       color: #fff;
-      text-decoration: none;
+      border: none;
       border-radius: 5px;
-      font-size: 18px;
-      transition: background-color 0.3s ease;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      margin-top: 20px;
     }
 
-    .portfolio-button:hover {
-      background-color: #2980b9;
+    @media only screen and (max-width: 600px) {
+      .card {
+        width: 100%;
+      }
+      .card-container{
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Thank You!</h1>
-    <p>We appreciate your support.</p>
-
-    <div class="card">
-      <h2>Connect With Us</h2>
-      <div class="social-icons">
-        <a href="#"><i class="fa fa-facebook"></i></a>
-        <a href="#"><i class="fa fa-twitter"></i></a>
-        <a href="#"><i class="fa fa-instagram"></i></a>
+    <h1 class="heading">Thank You!</h1>
+    <p class="paragraph">We appreciate your support.</p>
+    <div class="card-container">
+      <div class="card">
+        <h2>Connect with Us</h2>
+        <div class="social-icons">
+          <a href="#"><img src="social-icon-1.png" alt="Social Icon 1"></a>
+          <a href="#"><img src="social-icon-2.png" alt="Social Icon 2"></a>
+          <a href="#"><img src="social-icon-3.png" alt="Social Icon 3"></a>
+        </div>
       </div>
-    </div>
-
-    <div class="card">
-      <h2>Visit Our Portfolio</h2>
-      <a href="#" class="portfolio-button">Visit Now</a>
+      <div class="card">
+        <h2>Visit Our Portfolio</h2>
+        <a href="#" class="portfolio-button">Visit Now</a>
+      </div>
     </div>
   </div>
 </body>
