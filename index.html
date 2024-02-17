@@ -1,416 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Full Stack web developer from Islamabad. Attended Comsats University for graduation.">
-    <meta name="keywords" content="Daoud Hussain">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-   
-    <!-- Google tag for google analytics (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QQVTC4VFP"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-2QQVTC4VFP');
-    </script>
-
-</head>
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="shortcut icon" href="Img/Fav-icon.png" alt=""type="image/png">
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daoud Hussain</title>
+    <link rel="shortcut icon" href="Img/Fav-icon.png" alt="" type="image/png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.js"></script>
 
-    <style>       
-      hr{
-          height: 0.65px;
-          background-color: rgba(255, 255, 255,0.5);
-          border: none;
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        scroll-behavior: smooth;
+        list-style: none;
       }
-  </style>
-</head>
-<body id="home">
-  <header style="background-color: rgb(15, 14, 14); padding-top: 22px;">
-		<a href="#" class="logo"><img src="Img/logoo.png"></a>
-		<div class="bx bx-menu" id="menu-icon"></div>
 
-		<ul class="navbar">
-			<li><a href="#home">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#Skills">Skills</a></li>
-			<li><a href="#portfolio ">Projects</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</header>
-  
-  <section id="main" class="center scroll-section">
-      <div id="particles-js"></div>
-      <div class="user_info">
-        <div class="user_intro">
-          <h1 class="user_name">Daoud Hussain.</h1>
-          <img class="user_image" src="Img/shake-hand.gif" alt="">
-        </div>
-        <p>I'm a <span style="color: #f7517a" class="typing"></span></p>
-        
-        <a href="https://drive.google.com/file/d/1Cxhw363zqhEJX5iIOh3yl8uBrm5q2-u5/view" target="_blank" class="btn btn-effect">
-          <div class="top-face">Resume</div>
-          <div class="front-face">Resume </div>
-        </a>
-        
+      ::selection {
+        color: var(--secondary-color);
+      }
 
-        <section class="counters">
-          <div class="container">
-              <div>
-                  <i class="fab fa-github fa-4x" style="color: #eaeaea; border: none;"></i>
-                  <div class="counter" data-target="250">0</div>
-                  <h3>Followers</h3>
-              </div>
-              <div>
-                  <i class="fab fa-linkedin fa-4x" style="color: #eaeaea; border: none;"></i>
-                  <div class="counter" data-target="4300">0</div>
-                  <h3>Connections</h3>
-              </div>
-              <div>
-                <img src="Img/list-check-solid.svg" style="height: 65px;">
-                <div class="counter" data-target="30">0</div>
-                <h3>Projects Done</h3>
-            </div>
-            <div>
-              <img src="Img/person-circle-check-solid.svg" style="height: 65px;">
-              <div class="counter" data-target="20">0</div>
-                <h3>Happy Clients</h3>
-            </div>
-          </div>
-      </section>
+      :root {
+        --bg: #252a34;
+        --bg-dark: rgb(15, 14, 14);
+        --color: #eaeaea;
+        --light-color: #eaeaeaa4;
+        --primary-color: #08d9d6;
+        --secondary-color: #ff2e63;
+        --font: "Crimson Text", serif;
+        --secondary-font: "Work Sans", sans-serif;
+        --bg-color: #020312b5;
+      }
 
-      </div>
-      <div class="user_img">
-        <img src="Img/new-home-img.jpg" alt="" />
-      </div>
- 
-  </section> <br> <br> 
-  <main class="about scroll-section" id="about">     
-    <div class="display">
-      <img class="ab-img" src="Img/IMG-20230301-WA0018.jpg" alt="About Image"> <br> <br>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: var(--bg-dark);
+        color: var(--color);
+      }
+
+      .loader {
+        border: 8px solid var(--light-color);
+        border-radius: 50%;
+        border-top: 8px solid var(--secondary-color);
+        width: 60px;
+        height: 60px;
+        animation: spin 2s linear infinite;
+      }
+
+      .loading-text {
+        font-size: 26px;
+        color: var(--light-color);
+        font-family: var(--secondary-font);
+      }
+
+      .page_head {
+        margin-top: 15px;
+        font-size: 5em;
+        font-family: var(--font);
+        text-align: center;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="loader"></div>
+    <div class="page_head">Daoud Hussain.</div>
+    <div>
+      <span class="loading-text loading"></span>
     </div>
 
-      <div class="intro" >
-        <h1 style="font-size: x-large; text-align: left;">About:</h1>
-        <hr style="width: 90%;">
-        <div class="ab-p">
-          <p> I'm a <span style=" color:#ff2e63;">Final year CS-student</span> at Comsats-Isb and a <span style=" color:#ff2e63;">Full-stack developer</span> with a strong passion for leveraging cutting-edge technology to transform the digital landscape. My expertise lies in the <span style=" color:#ff2e63;">MERN-stack</span>, and I'm dedicated to crafting innovative solutions that push the boundaries of web development.</p> <br>
-
-          <p>With a solid foundation in computer science, I've been diligently refining my skills in building web applications. I have hands-on experience in creating robust back-end APIs using <span style=" color:#ff2e63;">Node.js</span> and <span style=" color:#ff2e63;">Express</span>, as well as crafting dynamic front-end interfaces with <span style=" color:#ff2e63;">React.js</span>. As a junior full-stack developer, I've actively contributed to several projects where I've played a pivotal role in designing, developing, and deploying web applications. </p><br>
-
-          <p>But, I'm not content with just the fundamentals. I'm <span style=" color:#ff2e63;">looking for</span> opportunities to work alongside experienced professionals and contribute to <span style=" color:#ff2e63;">real-world</span> projects that embrace the latest trends in web development and the MERN stack.</p> <br>
-
-          <p class="ab-p" style="opacity:2; color:rgba(160, 154, 154, 0.877);">  Available for Internship, and full-time jobs (Remote or onsite).</p>
-          <hr class="mobile-hr">
-
-      </div> 
-  </main> <br> <hr >
-  <section class="skills center scroll-section" id="Skills"> <br> <br><br class="main-br"> <br class="main-br">
-    <h1 class="page_head">Skills</h1>
-
-    <div class="skill_box center">
-      <div class="box">
-        <i class="fab fa-html5 fa-4x"></i>
-        <p style="font-size: larger;">HTML5</p>
-      </div>
-      <div class="box">
-        <i class="fab fa-css3-alt fa-4x"></i>
-        <p  style="font-size: larger;">CSS3</p>
-      </div>
-      <div class="box">
-        <i class="fab fa-js-square fa-4x"></i>
-        <p  style="font-size: larger;">Vanilla JS</p>
-      </div>
-      <div class="box">
-        <img class="react-icon" src="Img/react-svgrepo-com.svg" alt="React Icon"></img>
-        <p  style="font-size: larger;">React JS</p>
-      </div>
-      <div class="box">
-        <img class="node-icon" src="Img/nodejs01-svgrepo-com.svg" alt="Node Icon">
-        <p  style="font-size: larger;">Node JS</p>
-      </div>
-      <div class="box">
-        <img class="mongo-icon" src="Img/mongodb-svgrepo-com.svg" alt="Mongo Icon">
-        <p  style="font-size: larger;">MongoDB</p>
-      </div>
-      <div class="box" class="mobile">
-        <img class="native-icon" src="Img/react-16-svgrepo-com.svg" alt="React Native Icon"></img>
-        <p class="box-content" style="font-size: larger;">React Native</p>
-      </div>
-      <div class="box" class="mobile">
-        <img class="tailwind-icon" src="Img/tailwindcss-svgrepo-com.svg" alt="Tailwind Icon"></img>
-        <p class="box-content" style="font-size: larger;">TailwindCSS</p>
-      </div>
-      <div class="box" class="mobile">
-        <img class="data-icon" src="Img/data.svg" alt="Data Structures Icon"></img>
-        <p class="box-content" style="font-size: larger;">Data Structures</p>
-      </div>
-      <div class="box">
-        <i class="fab fa-github fa-4x"></i>
-        <p style="font-size: larger;">Git / Github</p>
-      </div>
-
-    </div>
-  </section> 
-  
- 
-	<section class="portfolio scroll-section" id="portfolio"><hr><br> <br> <br class="main-br"> <br class="main-br">
-    <h1 class="page_head">Projects</h1>
-		<div class="portfolio-content">
-      <a href="https://github.com/Daoud-Hussain/Dead-Target" target="_blank">
-        <div class="row">
-          <img src="Img/frontPage.PNG">
-          <div class="main-row">
-            <div class="row-text">
-              <h6>Made with Unreal Engine</h6>
-            </div>
-            <div class="row-icon">
-              <i class='bx bx-link'></i>
-            </div>
-          </div>
-          <h3>Dead Target </h3>
-        </div>
-      </a>
-
-      <a href="https://github.com/Daoud-Hussain/Fitness-Fuse" target="_blank">
-        <div class="row"> 
-          <img src="Img/Picture1.png">
-          <div class="main-row">
-            <div class="row-text">
-              <h6>Made with Bootsrap and Laravel</h6>
-            </div>
-            <div class="row-icon">
-              <i class='bx bx-link'></i>
-            </div>
-          </div> 
-          <h3>Fitness Fuse</h3>
-        </div>
-      </a>
-        
-			<a href="https://github.com/Daoud-Hussain/Blog-Site" target="_blank">
-        <div class="row">
-          <img src="Img/blog.PNG">
-          <div class="main-row">
-            <div class="row-text">
-              <h6>Made with Bootsrap and Laravel</h6>
-					</div>
-					<div class="row-icon">
-            <i class='bx bx-link'></i>
-					</div>
-				</div>
-				<h3>Blog Site</h3>
-			</div>
-    </a>
-
-    <a target="_blank" href="https://daoud-hussain.github.io/Weather-App/">
-      <div class="row">
-        <img src="Img/weather.PNG">
-        <div class="main-row">
-          <div class="row-text">
-            <h6>Made with Javascript using openweather API</h6>
-          </div>
-          <div class="row-icon">
-            <i class='bx bx-link'></i>
-          </div>
-        </div>
-        <h3>Weather App</h3>
-      </div>
-    </a>
-    
-          <a href="https://github.com/Daoud-Hussain/Todo-Web-App"  target="_blank">
-            <div class="row">
-              <img src="Img/todo.PNG">
-              <div class="main-row">
-                <div class="row-text">
-                  <h6>Made with HTML, CSS and Javascript</h6>
-                </div>
-                <div class="row-icon">
-                  <i class='bx bx-link'></i>
-                </div>
-              </div>
-              <h3>To-Do App</h3>
-            </div>
-          </a>
-
-    <a href="https://github.com/Daoud-Hussain/90-Days-of-Data-Structures/tree/master/Semester%20Project" target="_blank">
-        <div class="row" >
-          <img src="Img/project2.jpg">
-          <div class="main-row">
-            <div class="row-text">
-              <h6>Made with C++ Data Structures</h6>
-            </div>
-            <div class="row-icon">
-              <i class='bx bx-link'></i>
-            </div>
-          </div>
-          <h3>Favourite Panda</h3>
-        </div>
-      </a>
-      
-      <a href="https://github.com/Daoud-Hussain/Housing-Society-Management-System" target="_blank">
-        <div class="row">
-          <img src="Img/project1.jpg">
-          <div class="main-row">
-            <div class="row-text">
-              <h6>Made with Java Object Oriented Programming and Swing </h6>
-            </div>
-            <div class="row-icon">
-              <i class='bx bx-link'></i>
-            </div>
-          </div>
-          <h3>Housing-Buddy</h3>
-        </div>
-      </a>
-
-      <a href="https://daoud-hussain.github.io/Hotel-Website/" target="_blank">
-        <div class="row">
-          <img src="Img/project9.PNG">
-          <div class="main-row">
-            <div class="row-text">
-              <h6>Made with HTML, CSS and Javascript</h6>
-            </div>
-            <div class="row-icon">
-              <i class='bx bx-link'></i>
-            </div>
-          </div>
-          <h3>Hotel Website </h3>
-        </div>
-      </a>
-
-
-      
-      <a href="https://github.com/Daoud-Hussain/PSL-Info-project" target="_blank">
-        <div class="row">
-          <img src="Img/project7.jpg">
-          <div class="main-row">
-            <div class="row-text">
-              <h6>Made with Python, Tkinter and MySQL</h6>
-            </div>
-            <div class="row-icon">
-              <i class='bx bx-link'></i>
-            </div>
-          </div>
-          <h3>PSL-Connect</h3>
-        </div>
-      </a>
-
-
-		</div>
-    
-    <div class="project-btn">
-      <a href="https://github.com/Daoud-Hussain" target="_blank" class="btn btn-effect">
-        <div class="top-face">See More</div>
-        <div class="front-face">See More  </div>
-      </a>
-      
-    </div>
-	</section> <br> <br>
-
-  <main id="contact" class="scroll-section"> <hr><br> <br> <br class="main-br"> <br class="main-br"> 
-      <h1 class="page_head">Contact</h1>
-
-    <div class="bg"> <br>
-      <section class="message">
-        <div class="text">
-          <div class="content-form">
-              <section>
-                  <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
-                  <h2>Address</h2>
-                  <p>
-                      Chakwal, Pakistan
-                  </p>
-              </section>
-              
-              <section>
-              <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
-              <h2>E-mail</h2> <br class="mobile-br">
-              <p style="padding: 2px 0px;">1. daoudhussain302@gmail.com</p>
-              <p >2. user@daoudhussain.tech</p>
-              </section>
-
-              <section>
-                  <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
-                  <h2>Phone</h2>
-                  <p>+923483016704</p>
-              </section>
-          </div> 
-        </div> <br class="mobile-br">
-    
-        <form class="form" action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="a4c73768-9057-41a2-8157-3bc5f7bf6860">
-          <input type="hidden" name="redirect" value="https://daoud-hussain.github.io/Portfolio/thankyou">
-          <input type="hidden" name="subject" value= "New form Submission from Portfolio Form" />
-
-            <div class="right">
-              <div class="contact-form">
-                  <input name="Name" type="text" required>
-                  <span>Full Name <span style="color: #ff2e63"> *</span></span>
-              </div>
-
-              <div class="contact-form">
-                  <input name="Email" type="E-mail" required>
-                  <span>E-mail <span style="color: #ff2e63"> *</span></span>
-              </div>
-
-              <div class="contact-form">
-                  <input name="Phone" type="tel" required>
-                  <span>Phone <span style="color: #ff2e63"> *</span></span>
-              </div>
-              <div class="contact-form">
-                  <textarea name="text">
-                    
-                  </textarea>
-                  <span> Type your Message</span>
-              </div>
-
-              <button type="submit" name="submit" class="btn3 btn-effect">
-                    <div class="top-face">Submit</div>
-                    <div class="front-face">Submit  </div>
-              </button> 
-            </div>
-        </form>
-      </section>
-    </div>
-  </main> 
-     
- <div  class="end-icons" >
-   <div class="social">
-    <a id="facebook" target="_blank" class="fa fa-facebook" onclick="urlclicked()"></a>
-    <a id="insta" target="_blank" class="fa fa-instagram" onclick="urlclicked()"></a>
-    <a id="github" target="_blank" class="fa fa-github" onclick="urlclicked()"></a>
-    <a id="linkedin" target="_blank" class="fa fa-linkedin" onclick="urlclicked()"></a>
-    <a id="whatsapp" target="_blank" class="fa fa-whatsapp" onclick="urlclicked()"></a>
-  </div> 
-  </div> 
-
-  <div class="last-text">
-    <p>Copyright © 2024 | All rights Reserved by <span style="color: #ff2e63;"> Daoud Hussain</span>  </p>
-  </div>
- <!---scroll-top--->
- <a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-  <script src="assets/js/particles.js"></script>
-  <script src="assets/js/script.js"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-
-</body>
+    <script>
+      // Redirect to index.html after 4 seconds
+      setTimeout(() => {
+        window.location.href = "home.html";
+      }, 4000);
+    </script>
+  </body>
 </html>
+
+<script>
+  var typed = new Typed(".loading", {
+    strings: ["is Loading..."],
+    typeSpeed: 120,
+    backSpeed: 140,
+    loop: true,
+  });
+</script>
