@@ -16,8 +16,9 @@ body {
 	background-color: rgb(15, 14, 14);
 	color: var(--fg);
 	display: flex;
+    flex-direction: column;
 	font: 1em/1.5 sans-serif;
-	height: 100vh;
+	height: 90vh;
 	transition:
 		background-color var(--trans-dur),
 		color var(--trans-dur);
@@ -69,6 +70,24 @@ body {
 .bike__tire {
 	animation-name: bikeTire;
 }
+
+.text{
+    text-align: center;
+    width: 100%;
+}
+.loading-text {
+    font-size: 20px;
+    text-align: center;
+    color: #eaeaeaa4;
+    font-family: 'Work Sans', sans-serif
+}
+.text-head{
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+    font-size: 30px;
+    color: #ff2e63;
+    font-weight: 500;
+  }
 
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
