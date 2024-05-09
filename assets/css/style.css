@@ -923,9 +923,11 @@ a:link {
 
   }
   .text {
-    font-size: medium;
-    margin-left: 75px;
-    padding-bottom: 45px;
+    /* font-size: medium; */
+    /* margin-left: 75px; */
+    /* padding-bottom: 45px; */
+    text-align: center;
+    font-size: larger;
   }
 
   .form {
@@ -1021,11 +1023,16 @@ a:link {
   .row {
     border: 1px solid rgba(255, 255, 255, 0.068);
     padding: 19px;
-    margin-right: 25px;
-    margin-left: -2px;
+    /* margin-right: 35px; */
+    /* margin-left: -2px; */
     background: rgba(20, 21, 27, 0.63);
     border-radius: 0.5rem;
     transition: all .40s ease;
+  }
+  .portfolio-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .project-btn {
@@ -1043,7 +1050,11 @@ a:link {
   .text {
     font-size: medium;
     margin-left: -115px;
+    padding-bottom: 45px;
+    text-align: left;
+    /* font-size: large; */
   }
+  
 
   .skill_box .box .fa-line-chart {
     padding-bottom: 4px;
